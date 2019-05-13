@@ -15,13 +15,13 @@ Simple config. project to run [React](https://reactjs.org) using webpack and fre
 - [redux](https://github.com/reduxjs/redux)
 - [sass-loader, css-loader, node-sass, style-loader](https://github.com/webpack-contrib/sass-loader)
 
-**2.0.0** (*in progress*) adds...
-- typescript
-
-**Ice box**
-- jest
+**1.1.0** (*in progress*) adds...
 - styled-components
 
+**Ice box**
+- firebase
+- jest
+- linter (eslint)
 
 
 OBS: Requires [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com) installed in your machine.
