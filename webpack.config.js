@@ -2,7 +2,7 @@ const { resolve } = require('path');
 
 const config = {
   // original file to be transpiled
-  entry: resolve(__dirname, 'src', 'index.tsx'),
+  entry: resolve(__dirname, 'src', 'index.js'),
   // destiny of transpiled file
   output: {
     path: resolve(__dirname, 'public'),
@@ -10,7 +10,7 @@ const config = {
     publicPath: '/'
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx']
+    extensions: ['.js', '.jsx']
   },
   // directory watched by webpack-dev-server when any update comes
   devServer: {
@@ -21,10 +21,10 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(ts|tsx)?$/,
+        test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
         use: {
-          loader: 'awesome-typescript-loader'
+          loader: 'babel-loader'
         }
       },
       {

@@ -3,13 +3,8 @@ import React, { Component  } from 'react'
 // STYLE
 import './MainButton.scss'
 
-interface Props {
-  action(): void,
-  children: string
-}
-
-export default class MainButton extends Component<Props> {
-	constructor(props: Props) {
+export default class MainButton extends Component {
+	constructor(props) {
 		super(props)
 	}
 
