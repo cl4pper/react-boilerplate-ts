@@ -4,12 +4,7 @@ import { Link, Route } from 'react-router-dom'
 // STYLE
 import './RouteLink.scss'
 
-interface Props {
-  to: string,
-  label: string
-}
-
-const RouteComponent = (props: Props) => {
+const RouteComponent = (props) => {
 	return (
 		<Route
 			path={props.to}
