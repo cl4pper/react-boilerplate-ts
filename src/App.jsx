@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React, { Fragment } from 'react'
 import { Route } from 'react-router-dom'
 
 // STYLE
@@ -15,10 +15,10 @@ const App = () => (
     <LinksHeader />
 
     <Route exact path="/" render={() => (
-      <React.Fragment>
+      <Fragment>
         <PageTitle />
         <Counter />
-      </React.Fragment>
+      </Fragment>
     )}></Route>
 
     <Route path="/list" render={() => (
