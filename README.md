@@ -21,7 +21,6 @@ Simple config. project to run [React](https://reactjs.org) using webpack and fre
 **Ice box**
 - firebase
 - jest
-- linter (eslint)
 
 
 OBS: Requires [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com) installed in your machine.
