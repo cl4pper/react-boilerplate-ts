@@ -15,4 +15,4 @@ const LinksHeader = () => {
 	)
 }
 
-export { LinksHeader }
+export default LinksHeader

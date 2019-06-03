@@ -5,24 +5,19 @@ import { Route } from 'react-router-dom'
 import './app.scss'
 
 // COMPONENTS
-import PageTitle from './components/PageTitle/PageTitle'
-import RoadmapList from './components/RoadmapList/RoadmapList';
-import Counter from './components/Counter/Counter';
-import { LinksHeader } from './containers/LinksHeader/LinksHeader'
+import LinksHeader from './containers/LinksHeader/LinksHeader'
+import PostCard from './components/PostCard/PostCard';
 
 const App = () => (
   <div className="app">
     <LinksHeader />
 
     <Route exact path="/" render={() => (
-      <Fragment>
-        <PageTitle />
-        <Counter />
-      </Fragment>
+      <PostCard/>
     )}></Route>
 
     <Route path="/list" render={() => (
-      <RoadmapList />
+      <h1>List</h1>
     )}></Route>
   </div>
 )
