@@ -7,13 +7,15 @@ import './app.scss'
 // COMPONENTS
 import LinksHeader from './containers/LinksHeader/LinksHeader'
 import PostCard from './components/PostCard/PostCard';
+import Main from './components/Main/Main';
 
 const App = () => (
   <div className="app">
     <LinksHeader />
 
     <Route exact path="/" render={() => (
-      <PostCard/>
+      // <PostCard/>
+      <Main/>
     )}></Route>
 
     <Route path="/list" render={() => (

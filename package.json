@@ -10,11 +10,13 @@
   "author": "cl4pper@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "file-loader": "^4.0.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "redux-saga": "^1.0.2"
+    "redux-saga": "^1.0.2",
+    "url-loader": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
