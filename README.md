@@ -2,7 +2,7 @@
 
 Simple config. project to run [React](https://reactjs.org) using webpack and free from **create-react-app** :smiley:
 
-1. **fork** OR **clone** this repository
+1. **fork** this repository
 2. **npm i** (inside project root directory)
 3. **npm run dev** (to run project by webpack-dev-server)
 
@@ -15,10 +15,13 @@ Simple config. project to run [React](https://reactjs.org) using webpack and fre
 - [redux](https://github.com/reduxjs/redux)
 - [sass-loader, css-loader, node-sass, style-loader](https://github.com/webpack-contrib/sass-loader)
 
-**1.1.0** (*in progress*) adds...
-- styled-components
+**1.1.0** adds...
+- [file-loader](https://github.com/webpack-contrib/file-loader)
+- [url-loader](https://github.com/webpack-contrib/url-loader)
+
 
 **Ice box**
+- styled-components
 - firebase
 - jest
 
