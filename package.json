@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server --mode development"
   },
-  "author": "cl4pper@gmail.com",
+  "author": "cl4pper",
   "license": "ISC",
   "dependencies": {
     "file-loader": "^4.0.0",
