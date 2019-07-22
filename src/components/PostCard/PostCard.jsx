@@ -38,4 +38,4 @@ class PostCard extends Component {
     }
 }
 
-export default PostCard
+export { PostCard }

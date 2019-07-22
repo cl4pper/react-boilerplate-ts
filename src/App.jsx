@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Route } from 'react-router-dom'
 
 // STYLE
 import './app.scss'
 
 // COMPONENTS
-import LinksHeader from './containers/LinksHeader/LinksHeader'
-import PostCard from './components/PostCard/PostCard';
+import { LinksHeader } from '@containers'
+import { PostCard } from '@components'
 
 const App = () => (
   <div className="app">
