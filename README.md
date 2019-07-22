@@ -2,7 +2,7 @@
 
 Simple config. project to run [React](https://reactjs.org) using webpack and free from **create-react-app** :smiley:
 
-1. **fork** this repository
+1. **fork**/**clone** this repo
 2. **npm i** (inside project root directory)
 3. **npm run dev** (to run project by webpack-dev-server)
 
@@ -19,7 +19,8 @@ Simple config. project to run [React](https://reactjs.org) using webpack and fre
 - [file-loader](https://github.com/webpack-contrib/file-loader)
 - [url-loader](https://github.com/webpack-contrib/url-loader)
 
-**Ice box**
+
+**Coming next**
 - styled-components
 - firebase
 - jest
