@@ -1,20 +1,18 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Route } from 'react-router-dom'
 
 // STYLE
 import './app.scss'
 
 // COMPONENTS
-import LinksHeader from './containers/LinksHeader/LinksHeader'
-import PostCard from './components/PostCard/PostCard';
-import Main from './components/Main/Main';
+import { LinksHeader } from '@containers'
+import { Main } from '@components'
 
 const App = () => (
   <div className="app">
     <LinksHeader />
 
     <Route exact path="/" render={() => (
-      // <PostCard/>
       <Main/>
     )}></Route>
 

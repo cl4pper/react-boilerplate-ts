@@ -10,7 +10,12 @@ module.exports = {
 		publicPath: '/'
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+
+    alias: {
+      '@components': path.resolve(__dirname, 'src/components'),
+      '@containers': path.resolve(__dirname, 'src/containers')
+    }
   },
 	// directory watched by webpack-dev-server when any update comes
 	devServer: {

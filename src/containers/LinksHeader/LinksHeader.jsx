@@ -4,7 +4,7 @@ import * as React from 'react'
 import './LinksHeader.scss'
 
 // COMPONENTS
-import { RouteComponent } from '../../components/RouteLink/RouteLink'
+import { RouteComponent } from '@components'
 
 const LinksHeader = () => {
 	return (
@@ -15,4 +15,4 @@ const LinksHeader = () => {
 	)
 }
 
-export default LinksHeader
+export { LinksHeader }

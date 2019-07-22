@@ -19,11 +19,11 @@ Simple config. project to run [React](https://reactjs.org) using webpack and fre
 - [file-loader](https://github.com/webpack-contrib/file-loader)
 - [url-loader](https://github.com/webpack-contrib/url-loader)
 
-
 **Ice box**
 - styled-components
 - firebase
 - jest
+- react with saga (working)
 
 
 OBS: Requires [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com) installed in your machine.

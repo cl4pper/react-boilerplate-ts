@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link, Route } from 'react-router-dom'
 
 // STYLE
-import './RouteLink.scss'
+import './RouteComponent.scss'
 
 const RouteComponent = (props) => {
 	return (
