@@ -22,9 +22,13 @@ Simple config. project to run [React](https://reactjs.org) using webpack and fre
 
 **Coming next**
 - styled-components
+- Storybook
 - firebase
 - jest
 - react with saga (working)
 
+
+**Ice box**
+- Typescript
 
 OBS: Requires [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com) installed in your machine.
