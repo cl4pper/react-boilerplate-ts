@@ -5,20 +5,11 @@ import { Route } from 'react-router-dom'
 import './app.scss'
 
 // COMPONENTS
-import { LinksHeader } from '@containers'
-import { PostCard } from '@components'
+import { PageTitle } from '@components'
 
 const App = () => (
   <div className="app">
-    <LinksHeader />
-
-    <Route exact path="/" render={() => (
-      <PostCard/>
-    )}></Route>
-
-    <Route path="/list" render={() => (
-      <h1>List</h1>
-    )}></Route>
+    <PageTitle>React Boilerplate</PageTitle>
   </div>
 )
 
