@@ -1,0 +1,30 @@
+.ContentSection {
+  width: 100%;
+  padding: size("md");
+
+  &--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &--right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &--dark {
+    background-color: $bg-color-secondary;
+  }
+
+  &--light {
+    background-color: $bg-color-primary;
+  }
+}

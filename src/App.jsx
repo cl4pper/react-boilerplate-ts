@@ -5,11 +5,13 @@ import { Route } from 'react-router-dom'
 import './app.scss'
 
 // COMPONENTS
-import { PageTitle } from '@components'
+import { PageTitle, ContentSection } from '@components'
 
 const App = () => (
   <div className="app">
-    <PageTitle>React Boilerplate</PageTitle>
+    <ContentSection dark height="50vh">
+      <PageTitle light>React Boilerplate</PageTitle>
+    </ContentSection>
   </div>
 )
 
