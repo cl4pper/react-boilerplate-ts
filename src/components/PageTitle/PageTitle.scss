@@ -1,4 +1,16 @@
 .PageTitle {
+  @include fontTitle("sm");
+  letter-spacing: 0;
+  font-weight: bold;
+  margin: 0;
   display: flex;
   align-items: center;
+
+  &--dark {
+    color: $text-color-primary;
+  }
+
+  &--light {
+    color: $text-color-secondary;
+  }
 }
