@@ -19,6 +19,10 @@ Simple config. project to run [React](https://reactjs.org) using webpack and fre
 - [file-loader](https://github.com/webpack-contrib/file-loader)
 - [url-loader](https://github.com/webpack-contrib/url-loader)
 
+**1.2.0** adds...
+- [classnames](https://github.com/JedWatson/classnames)
+- [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
+
 
 **Coming next**
 - styled-components
@@ -26,7 +30,6 @@ Simple config. project to run [React](https://reactjs.org) using webpack and fre
 - firebase
 - jest
 - react with saga (working)
-
 
 **Ice box**
 - Typescript

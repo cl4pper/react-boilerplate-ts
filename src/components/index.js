@@ -1,2 +1,2 @@
-export * from '@components/Main/Main'
-export * from '@components/RouteComponent/RouteComponent'
+export * from './PageTitle/PageTitle'
+export * from './ContentSection/ContentSection'

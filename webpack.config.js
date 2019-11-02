@@ -11,10 +11,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
-
     alias: {
       '@components': path.resolve(__dirname, 'src/components'),
-      '@containers': path.resolve(__dirname, 'src/containers')
+      '@containers': path.resolve(__dirname, 'src/containers'),
+      '@styles': path.resolve(__dirname, 'src/styles'),
     }
   },
 	// directory watched by webpack-dev-server when any update comes
@@ -37,7 +37,12 @@ module.exports = {
 				use: [
 					{ loader: "style-loader" },
 					{ loader: "css-loader" },
-					{ loader: "sass-loader" }
+					{
+            loader: "sass-loader",
+            options: {
+              data: `@import "~@styles/global.scss";`
+            }
+          }
 				]
 			},
 			{

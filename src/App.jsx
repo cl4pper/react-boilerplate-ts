@@ -5,20 +5,13 @@ import { Route } from 'react-router-dom'
 import './app.scss'
 
 // COMPONENTS
-import { LinksHeader } from '@containers'
-import { Main } from '@components'
+import { PageTitle, ContentSection } from '@components'
 
 const App = () => (
   <div className="app">
-    <LinksHeader />
-
-    <Route exact path="/" render={() => (
-      <Main/>
-    )}></Route>
-
-    <Route path="/list" render={() => (
-      <h1>List</h1>
-    )}></Route>
+    <ContentSection dark height="50vh">
+      <PageTitle light>React Boilerplate</PageTitle>
+    </ContentSection>
   </div>
 )
 
