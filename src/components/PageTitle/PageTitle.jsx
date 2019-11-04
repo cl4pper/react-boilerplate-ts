@@ -5,15 +5,22 @@ import classNames from 'classnames'
 import './PageTitle.scss'
 
 function PageTitle (props) {
-  const { children, light } = props
+  const { children, light, subtitle } = props
 
   return (
-    <h1 className={classNames('PageTitle', {
+    <div className={classNames('PageTitle', {
       'PageTitle--dark': !light,
       'PageTitle--light': light
-    })}>
-      {children}
-    </h1>
+      })}>
+      <h1 className="PageTitle__title">
+        {children}
+      </h1>
+      {
+        subtitle ? (
+          <p className="PageTitle__subtitle">{subtitle}</p>
+        ) : null
+      }
+    </div>
   )
 }
 

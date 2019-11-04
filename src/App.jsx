@@ -11,7 +11,11 @@ const App = () => {
   return (
     <div className="app">
     <ContentSection dark height="50vh">
-      <PageTitle light>React Boilerplate <ReactLogo className="ReactLogo"/></PageTitle>
+      <PageTitle
+        subtitle="by cl4pper"
+        light>
+        React Boilerplate <ReactLogo className="ReactLogo"/>
+      </PageTitle>
     </ContentSection>
   </div>
   )
