@@ -9,6 +9,18 @@ body {
   align-items: center;
 }
 
+.ReactLogo {
+  width: 64px;
+  color: #61DAFB;
+  margin-left: size("sm");
+  animation: spin 3s infinite linear;
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(359deg); }
+  };
+}
+
 // FONTS FROM GOOGLE FONTS
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Lato', sans-serif;

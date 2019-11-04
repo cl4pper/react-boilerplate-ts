@@ -15,6 +15,7 @@ module.exports = {
       '@components': path.resolve(__dirname, 'src/components'),
       '@containers': path.resolve(__dirname, 'src/containers'),
       '@styles': path.resolve(__dirname, 'src/styles'),
+      '@assets': path.resolve(__dirname, 'src/assets')
     }
   },
 	// directory watched by webpack-dev-server when any update comes
@@ -46,12 +47,19 @@ module.exports = {
 				]
 			},
 			{
-				test: /\.(jpeg|jpg|png|gif|woff|woff2|eot|ttf|svg)$/,
+				test: /\.(jpeg|jpg|png|gif|woff|woff2|eot|ttf)$/,
 				use: [
 					{ loader: 'file-loader' },
 					{ loader: 'url-loader' }
 				]
-			}
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          { loader: '@svgr/webpack' },
+          { loader: 'url-loader' }
+        ]
+      }
 		]
 	}
 };

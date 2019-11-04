@@ -1,18 +1,20 @@
 import React from 'react'
-import { Route } from 'react-router-dom'
 
 // STYLE
 import './app.scss'
 
 // COMPONENTS
+import { ReactComponent as ReactLogo } from '@assets/images/react-logo.svg'
 import { PageTitle, ContentSection } from '@components'
 
-const App = () => (
-  <div className="app">
+const App = () => {
+  return (
+    <div className="app">
     <ContentSection dark height="50vh">
-      <PageTitle light>React Boilerplate</PageTitle>
+      <PageTitle light>React Boilerplate <ReactLogo className="ReactLogo"/></PageTitle>
     </ContentSection>
   </div>
-)
+  )
+}
 
 export default App
