@@ -1,0 +1,21 @@
+.MainLink {
+  @include fontText("md");
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+
+  &__logo {
+    color: inherit;
+    width: size("lg");
+    height: size("lg");
+    margin-right: size("xs");
+  }
+
+  &--dark {
+    color: $text-color-primary;
+  }
+
+  &--light {
+    color: $text-color-secondary;
+  }
+}
