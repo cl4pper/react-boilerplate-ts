@@ -2,6 +2,8 @@
 
 Simple config. project to run [React](https://reactjs.org) using webpack and free from **create-react-app** :smiley:
 
+Deployed on [Heroku](https://github.com/heroku). [link](https://cl4pper-react-boilerplate.herokuapp.com/)
+
 1. **fork**/**clone** this repo
 2. **npm i** (inside project root directory)
 3. **npm run dev** (to run project by webpack-dev-server)
