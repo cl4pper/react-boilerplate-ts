@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --mode development",
+    "dev-server": "webpack-dev-server --open",
     "start": "node server.js",
-    "heroku-postbuild": "webpack -p"
+    "build": "webpack -p",
+    "heroku-postbuild": "npm run build"
   },
   "author": "cl4pper",
   "license": "ISC",
