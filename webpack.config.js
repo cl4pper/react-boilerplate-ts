@@ -15,7 +15,8 @@ module.exports = {
       '@components': path.resolve(__dirname, 'src/components'),
       '@containers': path.resolve(__dirname, 'src/containers'),
       '@styles': path.resolve(__dirname, 'src/styles'),
-      '@assets': path.resolve(__dirname, 'src/assets')
+      '@assets': path.resolve(__dirname, 'src/assets'),
+      '@store': path.resolve(__dirname, 'src/store')
     }
   },
 	// directory watched by webpack-dev-server when any update comes
