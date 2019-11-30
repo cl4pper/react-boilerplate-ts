@@ -28,6 +28,7 @@ Simple config. project to run [React](https://reactjs.org) using webpack and fre
 ### 1.3.0
 - **+** [redux](https://github.com/reduxjs/redux)
 - **+** [redux-thunk](https://github.com/reduxjs/redux-thunk).
+- **+** [axios](https://github.com/axios/axios)
 - **-** react-fontawesome
 
 

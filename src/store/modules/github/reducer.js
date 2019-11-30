@@ -1,30 +1,32 @@
-import * as githubActions from './actions'
+// import * as githubActions from './actions'
 
 const INITIAL_STATE = {
-  loading: true,
+  loading: false,
   error: false,
-  data: [
-    {
-      id: 0,
-      text: 'First Commit'
-    }
-  ]
+  data: []
 }
 
 function reducer (state = INITIAL_STATE, action) {
   switch (action.type) {
-    case 'GET_COMMITS':
+    case 'LOAD_COMMITS':
       return {
         ...state,
-        loading: false,
+        loading: true,
         error: false
       }
 
-    case 'SET_COMMITS':
+    case 'LOAD_COMMITS_SUCCESS':
     return {
       ...state,
-      data: [...state.data, action.paylod]
+      data: action.payload
     }
+
+    case 'LOAD_COMMITS_FAILURE':
+        return {
+          ...state,
+          loading: false,
+          error: true
+        }
 
     default:
       return state
