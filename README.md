@@ -2,7 +2,7 @@
 
 Simple config. project to run [React](https://reactjs.org) using webpack and free from **create-react-app** :smiley:
 
-Deployed on [Heroku](https://github.com/heroku). [link](https://cl4pper-react-boilerplate.herokuapp.com/)
+This boilerplate is **ready to be launch** using [Heroku](https://dashboard.heroku.com/apps) platform. You just need to set the config. on Heroku's side and "voilà"...easy peasy
 
 1. **fork**/**clone** this repo
 2. **npm i** (inside project root directory)
@@ -25,6 +25,7 @@ Deployed on [Heroku](https://github.com/heroku). [link](https://cl4pper-react-bo
 ### 1.2.0
 - **+** [classnames](https://github.com/JedWatson/classnames)
 - **+** [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
+- **+** Ready for [Heroku](https://dashboard.heroku.com/apps)
 
 
 ### 1.3.0
