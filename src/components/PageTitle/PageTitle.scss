@@ -1,5 +1,9 @@
 .PageTitle {
 
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+
   &__title {
     @include fontTitle("lg");
     letter-spacing: 0;
