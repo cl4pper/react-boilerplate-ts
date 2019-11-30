@@ -21,7 +21,7 @@ class AppContainer extends Component {
   render () {
     const { strings, github } = this.props
 
-    console.log(github.data)
+    // console.log(github.data)
 
     return (
       <div className="app">
