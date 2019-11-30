@@ -1,20 +1,29 @@
-const getCommits = () => {
+
+// ACTION TO REQUEST DATA FROM API
+const loadCommits = () => {
   return {
-    type: 'GET_COMMITS'
+    type: 'LOAD_COMMITS'
   }
 }
 
-const setCommits = commit => {
+// ACTION EXECUTED AFTER SUCCESSFULL RESPONSE
+const loadCommitsSuccess = response => {
   return {
-    type: 'SET_COMMITS',
-    payload: {
-      id: commit.id,
-      text: commit.text
-    }
+    type: 'LOAD_COMMITS_SUCCESS',
+    payload: response
+  }
+}
+
+// ACTION EXECUTED AFTER A BAD REQUEST
+const loadCommitsFailure = response => {
+  return {
+    type: 'LOAD_COMMITS_FAILURE',
+    payload: response
   }
 }
 
 export {
-  getCommits,
-  setCommits
+  loadCommits,
+  loadCommitsSuccess,
+  loadCommitsFailure
 }

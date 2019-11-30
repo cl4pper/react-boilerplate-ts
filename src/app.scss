@@ -19,6 +19,10 @@ body {
     from { transform: rotate(0deg); }
     to { transform: rotate(359deg); }
   };
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 // FONTS FROM GOOGLE FONTS

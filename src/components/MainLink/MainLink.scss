@@ -4,6 +4,10 @@
   cursor: pointer;
   display: flex;
 
+  @media (max-width: 500px) {
+    @include fontText("lg");
+  }
+
   &__logo {
     color: inherit;
     width: size("lg");
