@@ -8,7 +8,6 @@ const githubRequest = () => {
     dispatch(githubActions.loadCommits())
     FETCHING_API('/repos/cl4pper/react-boilerplate/commits')
       .then(response => {
-        console.log(response)
         dispatch(githubActions.loadCommitsSuccess(response.data))
       })
       .catch(response => {

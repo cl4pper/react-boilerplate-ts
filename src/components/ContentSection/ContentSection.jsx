@@ -5,7 +5,7 @@ import classNames from 'classnames'
 import './ContentSection.scss'
 
 function ContentSection (props) {
-  const { children, light, left, right, spaced, height } = props
+  const { children, light, left, right, spaced, height, vertical } = props
   return (
     <section className={classNames('ContentSection', {
       'ContentSection--dark': !light,
@@ -13,7 +13,8 @@ function ContentSection (props) {
       'ContentSection--center': !left && !right && !spaced,
       'ContentSection--right': right,
       'ContentSection--left': left,
-      'ContentSection--spaced': spaced
+      'ContentSection--spaced': spaced,
+      'ContentSection--vertical': vertical && !left && !right && !spaced,
     })}
     style={{height: `${height}`}}>
       {children}

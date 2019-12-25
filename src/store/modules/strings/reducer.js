@@ -1,6 +1,7 @@
 const INITIAL_STATE = {
   data: {
-    title: 'React Boilerplate'
+    title: 'React Boilerplate',
+    commitsList: 'Last Commits'
   }
 }
 
