@@ -35,9 +35,11 @@ This boilerplate is **ready to be launch** using [Heroku](https://dashboard.hero
 - **-** react-fontawesome
 
 
-### 1.4.0
+### 1.4.1
 - **+** [jest](https://github.com/facebook/jest)
 - **+** [Snapshot testing](https://github.com/facebook/react/tree/master/packages/react-test-renderer)
+- **+** [react-moment](https://github.com/headzoo/react-moment#readme)
+- **+** Layout updates
 
 
 ## Ice box:
