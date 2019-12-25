@@ -3,10 +3,16 @@
 
   &__title {
     text-align: center;
-    @include fontTitle("md");
+    margin-bottom: size("md");
+    @include fontTitle("sm");
   }
 
   &__list {
     list-style: none;
+
+    > p {
+      margin: 0;
+      margin-bottom: size("sm");
+    }
   }
 }

@@ -15,7 +15,7 @@
   }
 
   &__subtitle {
-    @include fontText("md");
+    @include fontText("sm");
     margin: 0;
     color: inherit;
   }
