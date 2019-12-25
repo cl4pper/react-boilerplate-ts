@@ -1,10 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { ContentSection } from './ContentSection';
+import { MainLink } from './MainLink';
 
-describe('ContentSection', () => {
+describe('MainLink', () => {
   test('snapshot renders', () => {
-    const component = renderer.create(<ContentSection light={false}><p>Content</p></ContentSection>);
+    const component = renderer.create(<MainLink to="" light={false}>Link</MainLink>);
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
