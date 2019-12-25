@@ -1,7 +1,7 @@
 .CommitItem {
-  @include fontText("sm");
+  @include fontText("md");
 
-  .__date {
+  &__date {
     font-weight: bold;
     margin-right: size("sm");
   }
