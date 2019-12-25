@@ -1,0 +1,12 @@
+.CommitsList {
+  color: $text-color-primary;
+
+  &__title {
+    text-align: center;
+    @include fontTitle("md");
+  }
+
+  &__list {
+    list-style: none;
+  }
+}
