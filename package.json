@@ -1,8 +1,16 @@
 {
-  "name": "react-boilerplate",
+  "name": "@cl4pper/react-boilerplate",
   "version": "1.0.0",
   "description": "A boilerplate for future react projects.",
   "main": "index.js",
+  "keywords": [
+    "react",
+    "boilerplate",
+    "npm",
+    "package",
+    "frontend",
+    "create"
+  ],
   "scripts": {
     "test": "jest --config ./jest.config.json",
     "test:watch": "npm run test -- --watch",
