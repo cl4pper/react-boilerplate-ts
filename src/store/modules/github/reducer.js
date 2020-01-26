@@ -4,7 +4,7 @@ const INITIAL_STATE = {
   loading: false,
   error: false,
   data: []
-}
+};
 
 function reducer (state = INITIAL_STATE, action) {
   switch (action.type) {
@@ -13,26 +13,24 @@ function reducer (state = INITIAL_STATE, action) {
         ...state,
         loading: true,
         error: false
-      }
+      };
 
     case 'LOAD_COMMITS_SUCCESS':
     return {
       ...state,
       data: action.payload
-    }
+    };
 
     case 'LOAD_COMMITS_FAILURE':
         return {
           ...state,
           loading: false,
           error: true
-        }
+        };
 
     default:
-      return state
+      return state;
   }
 }
 
-export {
-  reducer
-}
+export {reducer};

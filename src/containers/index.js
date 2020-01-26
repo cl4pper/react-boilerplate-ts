@@ -1,1 +1,1 @@
-export * from './CommitsList/CommitsList'
+export * from './CommitsList/CommitsList';

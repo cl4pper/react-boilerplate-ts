@@ -3,12 +3,10 @@ const INITIAL_STATE = {
     title: 'React Boilerplate',
     commitsList: 'Last Commits'
   }
-}
+};
 
 function reducer (state = INITIAL_STATE) {
-  return state
+  return state;
 }
 
-export {
-  reducer
-}
+export {reducer};

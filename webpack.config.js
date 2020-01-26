@@ -22,7 +22,7 @@ module.exports = {
   },
 	// directory watched by webpack-dev-server when any update comes
 	devServer: {
-		contentBase: path.resolve(__dirname, "public"),
+		contentBase: path.resolve(__dirname, 'public'),
 		historyApiFallback: true,
 	},
 	// config. rules to transpiling project
@@ -38,12 +38,16 @@ module.exports = {
 			{
 				test: /\.scss$/,
 				use: [
-					{ loader: "style-loader" },
-					{ loader: "css-loader" },
 					{
-            loader: "sass-loader",
+ loader: 'style-loader' 
+},
+					{
+ loader: 'css-loader' 
+},
+					{
+            loader: 'sass-loader',
             options: {
-              data: `@import "~@styles/global.scss";`
+              data: '@import "~@styles/global.scss";'
             }
           }
 				]
@@ -51,15 +55,23 @@ module.exports = {
 			{
 				test: /\.(jpeg|jpg|png|gif|woff|woff2|eot|ttf)$/,
 				use: [
-					{ loader: 'file-loader' },
-					{ loader: 'url-loader' }
+					{
+ loader: 'file-loader' 
+},
+					{
+ loader: 'url-loader' 
+}
 				]
       },
       {
         test: /\.svg$/,
         use: [
-          { loader: '@svgr/webpack' },
-          { loader: 'url-loader' }
+          {
+ loader: '@svgr/webpack' 
+},
+          {
+ loader: 'url-loader' 
+}
         ]
       }
 		]
