@@ -28,7 +28,10 @@ module.exports = ({ config }) => {
 					{ loader: 'style-loader' },
 					{ loader: 'css-loader' },
 					{
-						loader: 'sass-loader'
+						loader: 'sass-loader',
+						options: {
+							data: `@import "~@styles/global.scss";`
+						}
 					}
 				]
 			},
