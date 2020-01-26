@@ -2,6 +2,8 @@
 
 Simple config. project to run [React](https://reactjs.org) using webpack and free from **create-react-app** :smiley:
 
+This boilerplate is **ready to be launch** using [Heroku](https://dashboard.heroku.com/apps) platform. You just need to set the config. on Heroku's side and "voilà"...easy peasy
+
 1. **fork**/**clone** this repo
 2. **npm i** (inside project root directory)
 3. **npm run dev** (to run project by webpack-dev-server)
@@ -23,6 +25,7 @@ Simple config. project to run [React](https://reactjs.org) using webpack and fre
 ### 1.2.0
 - **+** [classnames](https://github.com/JedWatson/classnames)
 - **+** [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
+- **+** Ready for [Heroku](https://dashboard.heroku.com/apps)
 
 
 ### 1.3.0
@@ -32,11 +35,17 @@ Simple config. project to run [React](https://reactjs.org) using webpack and fre
 - **-** react-fontawesome
 
 
+### 1.4.1
+- **+** [jest](https://github.com/facebook/jest)
+- **+** [Snapshot testing](https://github.com/facebook/react/tree/master/packages/react-test-renderer)
+- **+** [react-moment](https://github.com/headzoo/react-moment#readme)
+- **+** Layout updates
+
+
 ## Ice box:
 - styled-components
 - Storybook
 - firebase
-- jest
 
 
 OBS: Requires [Node](https://nodejs.org/en/) and [NPM](https://www.npmjs.com) installed in your machine.
