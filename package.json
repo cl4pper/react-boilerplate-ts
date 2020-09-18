@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": "jest --config ./jest.config.json",
 		"test:watch": "npm run test -- --watch",
-		"dev-server": "webpack-dev-server --open",
+		"app": "webpack-dev-server --open",
 		"style:fix": "prettier --write '**/*.jsx'",
 		"stories": "start-storybook --port 9090",
 		"start": "node server.js",
