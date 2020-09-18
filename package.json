@@ -9,7 +9,7 @@
 		"dev-server": "webpack-dev-server --open",
 		"style:fix": "prettier --write '**/*.jsx'",
 		"stories": "start-storybook --port 9090",
-		"start": "node server.js",
+		"app": "node server.js",
 		"build": "webpack -p",
 		"heroku-postbuild": "npm run build"
 	},
