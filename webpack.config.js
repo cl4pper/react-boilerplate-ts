@@ -31,49 +31,30 @@ module.exports = {
 			{
 				test: /\.(js|jsx)?$/,
 				exclude: /node_modules/,
-				use: {
-					loader: 'babel-loader'
-				}
+				use: { loader: 'babel-loader' }
 			},
 			{
 				test: /\.scss$/,
 				use: [
-					{
- loader: 'style-loader' 
-},
-					{
- loader: 'css-loader' 
-},
-					{
-            loader: 'sass-loader',
-            options: {
-              data: '@import "~@styles/global.scss";'
-            }
-          }
+					{ loader: 'style-loader' },
+					{ loader: 'css-loader'  },
+					{ loader: 'sass-loader', options: { data: '@import "~@styles/global.scss";' }}
 				]
 			},
 			{
 				test: /\.(jpeg|jpg|png|gif|woff|woff2|eot|ttf)$/,
 				use: [
-					{
- loader: 'file-loader' 
-},
-					{
- loader: 'url-loader' 
-}
+					{ loader: 'file-loader' },
+					{ loader: 'url-loader' }
 				]
-      },
-      {
-        test: /\.svg$/,
-        use: [
-          {
- loader: '@svgr/webpack' 
-},
-          {
- loader: 'url-loader' 
-}
-        ]
-      }
+      		},
+      		{
+				test: /\.svg$/,
+				use: [
+					{ loader: '@svgr/webpack' },
+					{ loader: 'url-loader' }
+				]
+			}
 		]
 	}
 };
