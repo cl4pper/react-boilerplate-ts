@@ -10,14 +10,10 @@ module.exports = {
 		publicPath: '/'
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
-      '@components': path.resolve(__dirname, 'src/components'),
-      '@containers': path.resolve(__dirname, 'src/containers'),
       '@styles': path.resolve(__dirname, 'src/styles'),
-      '@assets': path.resolve(__dirname, 'src/assets'),
-      '@store': path.resolve(__dirname, 'src/store'),
-      '@utils': path.resolve(__dirname, 'src/utils')
+      '@components': path.resolve(__dirname, 'src/components'),
     }
   },
 	// directory watched by webpack-dev-server when any update comes
@@ -32,6 +28,11 @@ module.exports = {
 				test: /\.(js|jsx)?$/,
 				exclude: /node_modules/,
 				use: { loader: 'babel-loader' }
+			},
+			{
+				test: /\.(ts|tsx)?$/,
+				exclude: /node_modules/,
+				use: { loader: 'ts-loader' }
 			},
 			{
 				test: /\.scss$/,
